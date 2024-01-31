@@ -10,7 +10,7 @@ var factorial = function factorial(n) {
 
 const args = process.argv.slice(2);
 const result = factorial(args[0]);
-fs.writeFile(myArgs[1], result.toString(), err => {
+fs.writeFile(args[1], result.toString(), err => {
   if (err) {
     console.error(err);
   }
